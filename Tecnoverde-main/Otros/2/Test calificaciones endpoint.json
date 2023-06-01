@@ -1,0 +1,50 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Test calificaciones endpoint",
+    "dateExported": "2023-05-27T21:24:28.516Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "3f79b55c-1e27-4959-9064-d2fa46b4183d",
+            "colId": "2d4afac7-4547-4faf-a540-05efe0ee6dd2",
+            "containerId": "",
+            "name": "Ver calificaciones endpoint",
+            "url": "localhost:8080/api/calificaciones",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-03-06T01:39:25.848Z",
+            "modified": "2023-05-20T23:07:55.240Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6W3siYXV0aG9yaXR5IjoiUk9MRV9DTElFTlRFIn1dLCJzdWIiOiJiYXlvbmEubiIsImlhdCI6MTY4NDYyNDA2NCwiZXhwIjoxNjg0NjI1ODY0fQ.CYWAB4KscE_xLCv3BWuM7GidjMQTRuK0gc8lUPR-xFc"
+            },
+            "tests": []
+        },
+        {
+            "_id": "09934d33-96db-4c0e-8016-a79671ebabe8",
+            "colId": "2d4afac7-4547-4faf-a540-05efe0ee6dd2",
+            "containerId": "",
+            "name": "Create calificacion",
+            "url": "localhost:8080/api/calificaciones",
+            "method": "POST",
+            "sortNum": 50000,
+            "created": "2023-04-02T02:34:34.808Z",
+            "modified": "2023-05-20T23:20:28.459Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"cliente\": 1,\n  \"servicio\": 2,\n  \"calificacion\": 3.5,\n  \"comentario\": \"Hola, no me gusto\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6W3siYXV0aG9yaXR5IjoiUk9MRV9DTElFTlRFIn1dLCJzdWIiOiJiYXlvbmEubiIsImlhdCI6MTY4NDYyNDgxOSwiZXhwIjoxNjg0NjI2NjE5fQ.0Xk6wjJZpgK9XSuqsaShYkuEpU0g_6grfEsZ_zt5T1M"
+            },
+            "tests": []
+        }
+    ]
+}

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified"
+    xmlns:tns="http://ms.javeriana.edu.co/Calificacion/entities"
+    targetNamespace="http://ms.javeriana.edu.co/Calificacion/entities">
+
+    <xsd:element name="buscarProductosRequest">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="servicio_id" type="xsd:long" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:element name="buscarProductosResponse">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="SearchResultsDTO" type="tns:searchResultsDTO" />
+            </xsd:sequence>
+        </xsd:complexType>
+    </xsd:element>
+
+    <xsd:complexType name="searchResultsDTO">
+        <xsd:sequence>
+            <xsd:element name="servicios">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="servicio" type="tns:servicio" />
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+
+        <!-- 
+        <xsd:sequence>
+            <xsd:element name="contenidos">
+                <xsd:complexType>
+                    <xsd:sequence>
+                        <xsd:element name="contenido" type="tns:contenido" />
+                    </xsd:sequence>
+                </xsd:complexType>
+            </xsd:element>
+        </xsd:sequence>
+         -->
+    </xsd:complexType>
+
+
+    <xsd:complexType name="servicio">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="descripcion" type="xsd:string" />
+            <xsd:element type="tns:infoAdicional" name="infoAdicional" />
+            <xsd:element minOccurs="0" name="tipo" type="xsd:normalizedString" />
+            <xsd:element name="proveedor" type="tns:proveedor" />
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="contenido">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="descripcion" type="xsd:string" />
+            <xsd:element type="tns:infoAdicional" name="infoAdicional" />
+            <xsd:element minOccurs="0" name="tipo" type="xsd:normalizedString" />
+            <xsd:element name="proveedor" type="tns:proveedor" />
+            <xsd:sequence>
+                <xsd:element minOccurs="0" name="texto" type="xsd:string" />
+                <xsd:element minOccurs="0" name="cliente" type="tns:cliente" />
+            </xsd:sequence>
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="proveedor">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="descripcion"
+                type="xsd:string" />
+            <xsd:element minOccurs="0" name="twitter" type="xsd:anyURI" />
+            <xsd:element minOccurs="0" name="foto" type="xsd:anyURI" />
+            <xsd:element minOccurs="0" name="pagina_web"
+                type="xsd:anyURI" />
+            <xsd:element minOccurs="0" name="facebook" type="xsd:anyURI" />
+            <xsd:element minOccurs="0" name="instagram"
+                type="xsd:anyURI" />
+            <xsd:element minOccurs="0" name="telefono" type="xsd:string" />
+            <xsd:element minOccurs="0" name="nombre" type="xsd:string" />
+            <xsd:element minOccurs="0" name="edad" type="xsd:int" />
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="cliente">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="descripcion"
+                type="xsd:string" />
+            <xsd:element minOccurs="0" name="foto"
+                type="xsd:anyURI" />
+            <xsd:element minOccurs="0" name="nombre"
+                type="xsd:string" />
+            <xsd:element minOccurs="0" name="edad"
+                type="xsd:int" />
+            <xsd:element minOccurs="0" name="username"
+                type="xsd:normalizedString" />
+        </xsd:sequence>
+    </xsd:complexType>
+
+    <xsd:complexType name="infoAdicional">
+        <xsd:sequence>
+            <xsd:element minOccurs="0" name="valor" type="xsd:anyURI" />
+            <xsd:element minOccurs="0" name="tipoInformacion"
+                type="xsd:string" />
+        </xsd:sequence>
+    </xsd:complexType>
+
+</xsd:schema>

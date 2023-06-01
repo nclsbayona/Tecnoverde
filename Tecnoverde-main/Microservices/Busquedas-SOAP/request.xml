@@ -1,0 +1,9 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/"
+                  xmlns:gs="http://ms.javeriana.edu.co/Calificacion/entities">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <gs:buscarProductosRequest>
+            <gs:servicio_id>1</gs:servicio_id>
+        </gs:buscarProductosRequest>
+    </soapenv:Body>
+</soapenv:Envelope>

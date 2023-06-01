@@ -1,0 +1,51 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Test servicios endpoint",
+    "dateExported": "2023-03-25T15:56:51.011Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "09e23380-60fa-4940-ad91-d5ae57277b89",
+            "colId": "2460c2b7-e60a-4286-8a5b-efab4715c49f",
+            "containerId": "",
+            "name": "Obtener todos los servicios",
+            "url": "http://localhost:8080/api/servicios",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-03-16T23:57:54.341Z",
+            "modified": "2023-03-25T15:47:20.221Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYXlvbmEubiIsImlhdCI6MTY3OTc1OTE0NywiZXhwIjoxNjc5NzYwOTQ3fQ.Xaf43rjn-8QeoBvJYIL2mYevLNT4HiJ8W2qTb7RzZuc"
+            },
+            "tests": []
+        },
+        {
+            "_id": "211b00f4-5835-4200-bc27-07bbed28fb64",
+            "colId": "2460c2b7-e60a-4286-8a5b-efab4715c49f",
+            "containerId": "",
+            "name": "Obtener todos los servicios de tipo hospedaje",
+            "url": "http://localhost:8080/api/servicios?tipo=Hospedaje",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-03-17T00:00:02.020Z",
+            "modified": "2023-03-25T15:47:45.525Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "tipo",
+                    "value": "Hospedaje",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYXlvbmEubiIsImlhdCI6MTY3OTc1OTE0NywiZXhwIjoxNjc5NzYwOTQ3fQ.Xaf43rjn-8QeoBvJYIL2mYevLNT4HiJ8W2qTb7RzZuc"
+            },
+            "tests": []
+        }
+    ]
+}

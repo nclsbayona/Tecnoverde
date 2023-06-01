@@ -1,0 +1,47 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Test contenidos endpoint",
+    "dateExported": "2023-05-27T21:22:43.359Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "9013ab9a-ac56-4a49-97c8-3cfa2cb8a637",
+            "colId": "0f6722ac-77e7-40e9-b076-e31092e2aa97",
+            "containerId": "",
+            "name": "Obtener todos los contenidos",
+            "url": "http://localhost:8080/api/contenidos",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-03-17T01:22:24.599Z",
+            "modified": "2023-03-17T01:22:24.599Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5c0dd716-cd33-459a-91a4-fc907e6fdf64",
+            "colId": "0f6722ac-77e7-40e9-b076-e31092e2aa97",
+            "containerId": "",
+            "name": "Ver todos los contenidos de tipo infografia",
+            "url": "localhost:8080/api/contenidos?tipo_contenido=Infografia",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-03-06T02:28:08.846Z",
+            "modified": "2023-04-06T00:55:16.253Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "tipo_contenido",
+                    "value": "Infografia",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYXlvbmEubiIsImlhdCI6MTY4MDc0MTM0NiwiZXhwIjoxNjgwNzQzMTQ2fQ.0i-ogPCSbyzWR5-NW9kxMvegoAjZqM61_gZdm7kB7Pk"
+            },
+            "tests": []
+        }
+    ]
+}

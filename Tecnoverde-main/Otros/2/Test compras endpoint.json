@@ -1,0 +1,79 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Test compras endpoint",
+    "dateExported": "2023-05-27T21:23:01.236Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "92fe6a01-376c-4013-967e-02c18a5ef43e",
+            "colId": "9abaecfd-4b84-4938-bcaa-abcd3139a3c1",
+            "containerId": "",
+            "name": "Crear una nueva compra",
+            "url": "http://localhost:8080/api/compras/compra",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-03-17T02:11:38.319Z",
+            "modified": "2023-05-19T21:23:30.656Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"cliente\": 2,\n  \"servicio\": 1\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6W3siYXV0aG9yaXR5IjoiUk9MRV9DTElFTlRFIn1dLCJzdWIiOiJiYXlvbmEubiIsImlhdCI6MTY4NDUzMTI0NiwiZXhwIjoxNjg0NTMzMDQ2fQ.eVoqXn8TJu9BgFd1b4WpwXdR7p4yPK8SINfWo1_x3ho"
+            },
+            "tests": []
+        },
+        {
+            "_id": "fbdc6d0a-e660-4492-a6f6-aca3d0a5d5fe",
+            "colId": "9abaecfd-4b84-4938-bcaa-abcd3139a3c1",
+            "containerId": "",
+            "name": "Get all",
+            "url": "http://localhost:8080/api/compras",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-03-31T01:14:41.087Z",
+            "modified": "2023-05-19T22:06:06.124Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6W3siYXV0aG9yaXR5IjoiUk9MRV9DTElFTlRFIn1dLCJzdWIiOiJiYXlvbmEubiIsImlhdCI6MTY4NDUzMzk1OSwiZXhwIjoxNjg0NTM1NzU5fQ.bqQV4bXVliyvlS6fJeUKFr1fPfaM-85UdSiGELTfIzc"
+            },
+            "tests": []
+        },
+        {
+            "_id": "550e7734-c578-49de-9f2b-965039eed014",
+            "colId": "9abaecfd-4b84-4938-bcaa-abcd3139a3c1",
+            "containerId": "",
+            "name": "Pagar compra 1",
+            "url": "http://localhost:8080/api/compras/compra?id=1&card=4444252681819090",
+            "method": "PUT",
+            "sortNum": 30000,
+            "created": "2023-05-19T20:37:57.771Z",
+            "modified": "2023-05-19T20:43:15.796Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "1",
+                    "isPath": false
+                },
+                {
+                    "name": "card",
+                    "value": "4444252681819090",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6W3siYXV0aG9yaXR5IjoiUk9MRV9DTElFTlRFIn1dLCJzdWIiOiJiYXlvbmEubiIsImlhdCI6MTY4NDUyODUyNCwiZXhwIjoxNjg0NTMwMzI0fQ.kKi39hu_3WwRJ0JPGFPz23TDG1ulY1H7dFtVNOLSAqA"
+            },
+            "tests": []
+        }
+    ]
+}

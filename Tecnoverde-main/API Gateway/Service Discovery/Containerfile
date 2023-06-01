@@ -1,0 +1,9 @@
+FROM docker.io/maven:3.9.0-eclipse-temurin-17-focal AS build
+WORKDIR /app
+ENV SERVER_PORT=8761
+COPY . .
+RUN mvn clean install compile && mvn clean package
+
+FROM docker.io/eclipse-temurin:17-jdk-alpine
+COPY --from=build /app/target/app.jar app.jar
+ENTRYPOINT [ "java", "-jar", "app.jar" ]

@@ -1,0 +1,32 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Test compras endpoint",
+    "dateExported": "2023-03-25T15:58:30.017Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "92fe6a01-376c-4013-967e-02c18a5ef43e",
+            "colId": "9abaecfd-4b84-4938-bcaa-abcd3139a3c1",
+            "containerId": "",
+            "name": "Crear una nueva compra",
+            "url": "http://localhost:8080/api/compras/compra",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-03-17T02:11:38.319Z",
+            "modified": "2023-03-25T15:53:53.596Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"cliente\": 2,\n  \"servicio\": 1\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYXlvbmEubiIsImlhdCI6MTY3OTc1OTE0NywiZXhwIjoxNjc5NzYwOTQ3fQ.Xaf43rjn-8QeoBvJYIL2mYevLNT4HiJ8W2qTb7RzZuc"
+            },
+            "tests": []
+        }
+    ]
+}

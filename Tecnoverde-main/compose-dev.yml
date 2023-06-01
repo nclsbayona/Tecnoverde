@@ -1,0 +1,89 @@
+# This compose file uses maven image for every component and have sleep infinity command, therefore need intervention to work. This is for development only because it mounts the directories for every component so modifying the component directory in the host also modifies the container version of the component (The service discovery will build the image based on the host directory so changes in host directory wont affect container version).
+services:
+  # API Gateway
+  service-discovery:
+    build:
+      context: "./API Gateway/Service Discovery"
+      dockerfile: "Containerfile"
+    environment:
+      - SERVER_PORT=8761
+    ports:
+      - "8000:8761"
+
+  auth-service:
+    image: docker.io/micr0nclsbayona/api-gateway-auth
+    environment:
+      - REGISTRY_HOST=service-discovery
+      - REGISTRY_PORT=8761
+      - SERVER_PORT=8080
+      
+  load-balancer:
+    image: docker.io/micr0nclsbayona/api-gateway-loadbalancer
+    ports:
+      - 8080:8080
+    environment:
+      - REGISTRY_HOST=service-discovery
+      - REGISTRY_PORT=8761
+      - SERVER_PORT=8080
+      
+  #
+
+  # Microservices
+  search_soap-service:
+    image: docker.io/micr0nclsbayona/microservices-soaps
+    environment:
+      - REGISTRY_HOST=service-discovery
+      - REGISTRY_PORT=8761
+      - SERVER_PORT=8080
+
+  grades-service:
+    image: docker.io/maven:3.9.0-eclipse-temurin-17-focal
+    volumes: 
+      - type: bind
+        source: "./Microservices/Calificaciones"
+        target: /home
+    command: "sleep infinity"
+    environment:
+      - REGISTRY_HOST=service-discovery
+      - REGISTRY_PORT=8761
+      - SERVER_PORT=8080
+
+  purchases-service:
+    image: docker.io/maven:3.9.0-eclipse-temurin-17-focal
+    volumes: 
+      - type: bind
+        source: "./Microservices/Compras"
+        target: /home
+    command: "sleep infinity"
+    environment:
+      - REGISTRY_HOST=service-discovery
+      - REGISTRY_PORT=8761
+      - SERVER_PORT=8080
+    env_file:
+      - purchases_api_keys.env
+
+  products-service:
+    image: docker.io/maven:3.9.0-eclipse-temurin-17-focal
+    volumes: 
+      - type: bind
+        source: "./Microservices/Productos"
+        target: /home
+    command: "sleep infinity"
+    environment:
+      - REGISTRY_HOST=service-discovery
+      - REGISTRY_PORT=8761
+      - SERVER_PORT=8080
+    env_file:
+      - service_api_keys.env
+    #
+    
+    # Client
+  client:
+    image: docker.io/golang:1.20-buster
+    volumes: 
+      - type: bind
+        source: "./Client"
+        target: /home
+    command: "sleep infinity"
+    environment:
+      - GATEWAY_IP=load-balancer:8080

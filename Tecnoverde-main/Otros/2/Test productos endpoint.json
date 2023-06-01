@@ -1,0 +1,76 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Test productos endpoint",
+    "dateExported": "2023-05-27T21:21:34.152Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "40c31b27-35bd-493b-ac45-59e410befae9",
+            "colId": "8efb4788-b27e-42c8-9ed2-dad84fa3c52d",
+            "containerId": "",
+            "name": "Ver todos los productos",
+            "url": "localhost:8080/api/productos/clientes",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-03-25T15:46:38.844Z",
+            "modified": "2023-05-08T17:15:09.479Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6W3siYXV0aG9yaXR5IjoiUk9MRV9DTElFTlRFIn1dLCJzdWIiOiJiYXlvbmEubiIsImlhdCI6MTY4MzU2NjEwMCwiZXhwIjoxNjgzNTY3OTAwfQ.RfGEY4H0CUcCxGwpA-ib9TCz6GRashkHuQQTFaK1sR0"
+            },
+            "tests": []
+        },
+        {
+            "_id": "4342e924-1554-4ca9-8103-34ed0cb94834",
+            "colId": "8efb4788-b27e-42c8-9ed2-dad84fa3c52d",
+            "containerId": "",
+            "name": "Ver contenidos de tipo Infografia y servicios de tipo acompañamiento",
+            "url": "localhost:8080/api/productos?tipo_contenido=Infografia&tipo_servicio=Acompañamiento",
+            "method": "GET",
+            "sortNum": 15000,
+            "created": "2023-03-06T02:34:23.090Z",
+            "modified": "2023-04-06T00:54:46.905Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "tipo_contenido",
+                    "value": "Infografia",
+                    "isPath": false
+                },
+                {
+                    "name": "tipo_servicio",
+                    "value": "Acompañamiento",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYXlvbmEubiIsImlhdCI6MTY4MDc0MTM0NiwiZXhwIjoxNjgwNzQzMTQ2fQ.0i-ogPCSbyzWR5-NW9kxMvegoAjZqM61_gZdm7kB7Pk"
+            },
+            "tests": []
+        },
+        {
+            "_id": "3fd647eb-4aa8-4a2b-bd17-d57103299cb1",
+            "colId": "8efb4788-b27e-42c8-9ed2-dad84fa3c52d",
+            "containerId": "",
+            "name": "Ver todos los productos por un nombre",
+            "url": "localhost:8080/api/productos?nombre=Con",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-03-25T15:52:37.635Z",
+            "modified": "2023-04-06T00:31:57.824Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "nombre",
+                    "value": "Con",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        }
+    ]
+}

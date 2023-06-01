@@ -1,0 +1,7 @@
+.gitignore
+HELP.md
+.mvn*
+mvnw.cmd
+Containerfile
+target*
+.vscode/

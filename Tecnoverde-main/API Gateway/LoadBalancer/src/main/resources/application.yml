@@ -1,0 +1,59 @@
+server:
+  port: ${SERVER_PORT:8080}
+
+eureka:
+  instance:
+    preferIpAddress: true
+    
+  client:
+   serviceUrl: 
+    defaultZone: http://${REGISTRY_HOST:localhost}:${REGISTRY_PORT:8761}/eureka
+
+spring:
+  main:
+    allow-circular-references: true
+  application:
+    name: Load-Balancer
+  cloud:
+    gateway:
+      routes:
+
+        - id: cuentas-microservice
+          uri: lb://Auth-Service
+          predicates:
+            - Path=/api/cuentas/**
+
+        - id: products-microservice
+          uri: lb://Productos
+          filters:
+            - Filter=CLIENTE
+          predicates:
+            - Path=/api/contenidos/clientes/**,/api/servicios/clientes/**,/api/productos/clientes/**
+            
+        - id: products-proveedor-microservice
+          uri: lb://Productos
+          filters:
+            - Filter=PROVEEDOR
+          predicates:
+            - Path=/api/servicios/proveedores/**
+
+        - id: purchases-microservice
+          uri: lb://Compras
+          filters:
+            - Filter=CLIENTE
+          predicates:
+            - Path=/api/compras/**
+            
+        - id: search-soap-microservice
+          uri: lb://Search-SOAP
+          filters:
+            - Filter=CLIENTE
+          predicates:
+            - Path=/api/busqueda-soap/**
+
+        - id: calificaciones-microservice
+          uri: lb://Calificaciones
+          filters:
+            - Filter=CLIENTE
+          predicates:
+            - Path=/api/calificaciones/**

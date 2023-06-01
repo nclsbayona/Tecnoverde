@@ -1,0 +1,1 @@
+curl --header "Content-Type: text/xml;charset=UTF-8" -d @request.xml http://localhost:$1/api/busqueda-soap

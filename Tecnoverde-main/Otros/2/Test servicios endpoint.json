@@ -1,0 +1,98 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Test servicios endpoint",
+    "dateExported": "2023-05-27T21:21:58.548Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "09e23380-60fa-4940-ad91-d5ae57277b89",
+            "colId": "2460c2b7-e60a-4286-8a5b-efab4715c49f",
+            "containerId": "",
+            "name": "Obtener todos los servicios",
+            "url": "http://localhost:8080/api/servicios/clientes",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-03-16T23:57:54.341Z",
+            "modified": "2023-05-19T19:46:35.676Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6W3siYXV0aG9yaXR5IjoiUk9MRV9DTElFTlRFIn1dLCJzdWIiOiJiYXlvbmEubiIsImlhdCI6MTY4NDUyNTU4MSwiZXhwIjoxNjg0NTI3MzgxfQ.Q3lPM8AkLQTn6md9fbT_CvOZCVc8I45nxmK9zj6Lk-Q"
+            },
+            "tests": []
+        },
+        {
+            "_id": "d79a61e3-fe23-40d5-8a80-d3b85537a9e2",
+            "colId": "2460c2b7-e60a-4286-8a5b-efab4715c49f",
+            "containerId": "",
+            "name": "Obtener servicio por ID",
+            "url": "localhost:8080/api/servicios/clientes/servicio?id=1",
+            "method": "GET",
+            "sortNum": 15000,
+            "created": "2023-04-12T19:47:35.178Z",
+            "modified": "2023-05-08T00:59:39.615Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "1",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6W3siYXV0aG9yaXR5IjoiUk9MRV9QUk9WRUVET1IifV0sInN1YiI6Imp1YW4iLCJpYXQiOjE2ODM1MDcwODYsImV4cCI6MTY4MzUwODg4Nn0.BMSQLE3XZjucHJyEL-119fdBZZ8yYEsH0L7fYQdNO5w"
+            },
+            "tests": []
+        },
+        {
+            "_id": "211b00f4-5835-4200-bc27-07bbed28fb64",
+            "colId": "2460c2b7-e60a-4286-8a5b-efab4715c49f",
+            "containerId": "",
+            "name": "Obtener todos los servicios de tipo hospedaje",
+            "url": "http://localhost:8080/api/servicios/clientes?tipo=Hospedaje",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-03-17T00:00:02.020Z",
+            "modified": "2023-05-08T01:00:12.724Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "tipo",
+                    "value": "Hospedaje",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ5MzR4NHQzIiwiaWF0IjoxNjgwMzk4NTUwLCJleHAiOjE2ODA0MDAzNTB9.n3K1lZq5lPOYx3yDiDw7pJGkqcao_QDHGhmtUeLffJs"
+            },
+            "tests": []
+        },
+        {
+            "_id": "39a8f277-b1ff-4cae-b9b4-b9323648bc6a",
+            "colId": "2460c2b7-e60a-4286-8a5b-efab4715c49f",
+            "containerId": "",
+            "name": "Crear servicio",
+            "url": "http://localhost:8080/api/servicios/proveedores/servicio",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-04-09T00:43:55.842Z",
+            "modified": "2023-05-27T16:56:33.158Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Este es un servicio de prueba\",\n  \"descripcion\": \"Probando\",\n  \"proveedor_ID\": \"1\",\n  \"precio\": \"$25.000\",\n  \"tipo_servicio\": \"Alojamiento\",\n  \"informacionAdicional\":{\n    \"Ubicacion\": \"Castillo Marroquin\"\n  }\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6W3siYXV0aG9yaXR5IjoiUk9MRV9QUk9WRUVET1IifV0sInN1YiI6Imp1YW4iLCJpYXQiOjE2ODUyMDY1NTEsImV4cCI6MTY4NTIwODM1MX0.R14C0mrBGKbB2HvIIZ8XqriQFUUbKLPUFhmwIl1Bpyc"
+            },
+            "tests": []
+        }
+    ]
+}

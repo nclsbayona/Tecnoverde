@@ -1,0 +1,9 @@
+# This compose file uses images and needs no extern attention
+services:
+   # Client
+  client:
+    image: docker.io/micr0nclsbayona/client
+    userns_mode: "host"
+    network_mode: "host"
+    environment:
+      - GATEWAY_IP=10.43.101.160:8001

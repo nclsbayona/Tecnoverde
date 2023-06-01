@@ -1,0 +1,37 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Test busquedas - SOAP endpoint",
+    "dateExported": "2023-05-27T21:24:04.429Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "620d1f2a-5b17-40e3-8cc3-fff3a51ce567",
+            "colId": "bb5744d4-618c-41b6-a665-f4eaabc45368",
+            "containerId": "",
+            "name": "Buscar servicio con id 1",
+            "url": "localhost:8080/api/busqueda-soap",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-03-25T20:22:24.658Z",
+            "modified": "2023-05-09T17:38:55.960Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "text/xml"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "xml",
+                "raw": "<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:gs=\"http://ms.javeriana.edu.co/Calificacion/entities\">\n    <soapenv:Header/>\n    <soapenv:Body>\n        <gs:buscarProductosRequest>\n            <gs:servicio_id>3</gs:servicio_id>\n        </gs:buscarProductosRequest>\n    </soapenv:Body>\n</soapenv:Envelope>",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJyb2xlcyI6W3siYXV0aG9yaXR5IjoiUk9MRV9DTElFTlRFIn1dLCJzdWIiOiJiYXlvbmEubiIsImlhdCI6MTY4MzY1MzkwNCwiZXhwIjoxNjgzNjU1NzA0fQ.Q_467XX9KS0MLfYl9RTq9RIj-FTLxx4to_Pdv_TFm5k"
+            },
+            "tests": []
+        }
+    ]
+}

@@ -1,0 +1,128 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Test busquedas - REST endpoint",
+    "dateExported": "2023-03-25T17:46:52.638Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "f5dbee41-a917-4f15-a73b-31cfbb01d3f8",
+            "colId": "49d242c6-70c5-4c6c-97f8-1ce3a530fb78",
+            "containerId": "",
+            "name": "Ver todos los productos del sistema",
+            "url": "localhost:8080/api/busqueda-rest",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-03-25T14:55:26.168Z",
+            "modified": "2023-03-25T15:54:10.589Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYXlvbmEubiIsImlhdCI6MTY3OTc1OTE0NywiZXhwIjoxNjc5NzYwOTQ3fQ.Xaf43rjn-8QeoBvJYIL2mYevLNT4HiJ8W2qTb7RzZuc"
+            },
+            "tests": []
+        },
+        {
+            "_id": "f363b544-6231-41a6-8124-701c2a7d52f6",
+            "colId": "49d242c6-70c5-4c6c-97f8-1ce3a530fb78",
+            "containerId": "",
+            "name": "Ver todos los servicios de tipo acompañamiento",
+            "url": "localhost:8080/api/busqueda-rest?tipo_servicio=Acompañamiento",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-03-06T02:26:53.197Z",
+            "modified": "2023-03-25T15:54:30.626Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "tipo_servicio",
+                    "value": "Acompañamiento",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYXlvbmEubiIsImlhdCI6MTY3OTc1OTE0NywiZXhwIjoxNjc5NzYwOTQ3fQ.Xaf43rjn-8QeoBvJYIL2mYevLNT4HiJ8W2qTb7RzZuc"
+            },
+            "tests": []
+        },
+        {
+            "_id": "5c0dd716-cd33-459a-91a4-fc907e6fdf64",
+            "colId": "49d242c6-70c5-4c6c-97f8-1ce3a530fb78",
+            "containerId": "",
+            "name": "Ver todos los contenidos de tipo infografia",
+            "url": "localhost:8080/api/busqueda-rest?tipo_contenido=Infografia",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-03-06T02:28:08.846Z",
+            "modified": "2023-03-25T15:54:38.670Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "tipo_contenido",
+                    "value": "Infografia",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYXlvbmEubiIsImlhdCI6MTY3OTc1OTE0NywiZXhwIjoxNjc5NzYwOTQ3fQ.Xaf43rjn-8QeoBvJYIL2mYevLNT4HiJ8W2qTb7RzZuc"
+            },
+            "tests": []
+        },
+        {
+            "_id": "4342e924-1554-4ca9-8103-34ed0cb94834",
+            "colId": "49d242c6-70c5-4c6c-97f8-1ce3a530fb78",
+            "containerId": "",
+            "name": "Ver contenidos de tipo Infografia y servicios de tipo acompañamiento",
+            "url": "localhost:8080/api/busqueda-rest?tipo_contenido=Infografia&tipo_servicio=Acompañamiento",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2023-03-06T02:34:23.090Z",
+            "modified": "2023-03-25T15:54:45.784Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "tipo_contenido",
+                    "value": "Infografia",
+                    "isPath": false
+                },
+                {
+                    "name": "tipo_servicio",
+                    "value": "Acompañamiento",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYXlvbmEubiIsImlhdCI6MTY3OTc1OTE0NywiZXhwIjoxNjc5NzYwOTQ3fQ.Xaf43rjn-8QeoBvJYIL2mYevLNT4HiJ8W2qTb7RzZuc"
+            },
+            "tests": []
+        },
+        {
+            "_id": "3162b46d-ee0a-4de9-a090-421d1de1cff6",
+            "colId": "49d242c6-70c5-4c6c-97f8-1ce3a530fb78",
+            "containerId": "",
+            "name": "Ver por nombre",
+            "url": "localhost:8080/api/busqueda-rest?nombre=Con",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-03-06T02:49:29.436Z",
+            "modified": "2023-03-25T15:55:46.039Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "nombre",
+                    "value": "Con",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYXlvbmEubiIsImlhdCI6MTY3OTc1OTE0NywiZXhwIjoxNjc5NzYwOTQ3fQ.Xaf43rjn-8QeoBvJYIL2mYevLNT4HiJ8W2qTb7RzZuc"
+            },
+            "tests": []
+        }
+    ]
+}

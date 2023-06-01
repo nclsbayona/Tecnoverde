@@ -1,0 +1,51 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Test productos endpoint",
+    "dateExported": "2023-03-25T15:58:00.531Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "40c31b27-35bd-493b-ac45-59e410befae9",
+            "colId": "8efb4788-b27e-42c8-9ed2-dad84fa3c52d",
+            "containerId": "",
+            "name": "Ver todos los productos",
+            "url": "localhost:8080/api/productos",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-03-25T15:46:38.844Z",
+            "modified": "2023-03-25T15:46:38.844Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYXlvbmEubiIsImlhdCI6MTY3OTc1OTE0NywiZXhwIjoxNjc5NzYwOTQ3fQ.Xaf43rjn-8QeoBvJYIL2mYevLNT4HiJ8W2qTb7RzZuc"
+            },
+            "tests": []
+        },
+        {
+            "_id": "3fd647eb-4aa8-4a2b-bd17-d57103299cb1",
+            "colId": "8efb4788-b27e-42c8-9ed2-dad84fa3c52d",
+            "containerId": "",
+            "name": "Ver todos los productos por un nombre",
+            "url": "localhost:8080/api/productos?nombre=Con",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-03-25T15:52:37.635Z",
+            "modified": "2023-03-25T15:53:30.955Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "nombre",
+                    "value": "Con",
+                    "isPath": false
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJiYXlvbmEubiIsImlhdCI6MTY3OTc1OTE0NywiZXhwIjoxNjc5NzYwOTQ3fQ.Xaf43rjn-8QeoBvJYIL2mYevLNT4HiJ8W2qTb7RzZuc"
+            },
+            "tests": []
+        }
+    ]
+}

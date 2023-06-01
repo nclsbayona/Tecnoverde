@@ -1,0 +1,9 @@
+.gitignore
+HELP.md
+.mvn*
+mvnw.cmd
+Containerfile
+target*
+.vscode/
+invoque_curl.sh
+request.xml

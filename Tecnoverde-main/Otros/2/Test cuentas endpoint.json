@@ -1,0 +1,163 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Test cuentas endpoint",
+    "dateExported": "2023-05-27T21:20:56.767Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "3ca547a4-a2fb-4b3c-addb-be80f2aab710",
+            "colId": "2d91c85b-f91a-4250-8bbc-eb6f69e43093",
+            "containerId": "",
+            "name": "Login - Cliente",
+            "url": "localhost:8080/api/cuentas/login",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-03-25T00:48:37.072Z",
+            "modified": "2023-05-27T16:55:39.086Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"bayona.n\",\n  \"password\": \"Nicol4$\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3154e6ee-f32f-4068-8de5-06b103900d1b",
+            "colId": "2d91c85b-f91a-4250-8bbc-eb6f69e43093",
+            "containerId": "",
+            "name": "Login - Proveedor",
+            "url": "localhost:8080/api/cuentas/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-03-25T00:53:28.182Z",
+            "modified": "2023-03-29T15:09:11.549Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\":\"juan\",\n  \"password\":\"jujujuan\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e50c8eb1-606a-4c18-b13c-9cabdc1192fc",
+            "colId": "2d91c85b-f91a-4250-8bbc-eb6f69e43093",
+            "containerId": "",
+            "name": "Crear proveedor",
+            "url": "localhost:8080/api/cuentas/proveedor",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-03-25T14:15:07.176Z",
+            "modified": "2023-03-25T14:21:02.212Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"JPxD\",\n  \"password\": \"GG\",\n  \"nombre\": \"Pablo\",\n  \"edad\": \"17\",\n  \"descripcion\": \"Soy un guía experto!\",\n  \"telefono\": \"6052426172\",\n  \"pagina_web\": \"Mi pagina web\",\n  \"foto\": {\n    \"url\": \"https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fthumbs.dreamstime.com%2Fb%2Fcara-seria-del-hombre-98568244.jpg&f=1&nofb=1&ipt=4c893e50e3b78758ead2295899039d64bcb302f318199ec9fce1c9808fca0f22&ipo=images\"\n  },\n  \"redesSociales\":{\n    \"facebook\": \"\",\n    \"instagram\": \"\",\n    \"twitter\": \"\"\n  }\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "37a13b4d-ef77-481d-8545-da8e47f62e8f",
+            "colId": "2d91c85b-f91a-4250-8bbc-eb6f69e43093",
+            "containerId": "",
+            "name": "Crear cliente",
+            "url": "localhost:8080/api/cuentas/cliente",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-03-25T14:36:01.069Z",
+            "modified": "2023-03-25T14:39:47.259Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"username\": \"y34x4t3\",\n  \"password\": \"Nicol4$\",\n  \"nombre\": \"L34k\",\n  \"edad\": \"21\",\n  \"descripcion\": \"Donde nos perdimos?\",\n  \"foto\": {\n    \"url\": \"\"\n  }\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "67572352-9fdb-4e66-bb85-893600c52232",
+            "colId": "2d91c85b-f91a-4250-8bbc-eb6f69e43093",
+            "containerId": "",
+            "name": "Get clientes",
+            "url": "localhost:8080/api/cuentas/cliente",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-03-29T14:40:59.583Z",
+            "modified": "2023-03-29T14:41:51.803Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3380eabc-8ab8-440c-83ce-93d2388d9dac",
+            "colId": "2d91c85b-f91a-4250-8bbc-eb6f69e43093",
+            "containerId": "",
+            "name": "Get proveedores",
+            "url": "localhost:8080/api/cuentas/proveedor",
+            "method": "GET",
+            "sortNum": 55000,
+            "created": "2023-03-29T14:44:31.449Z",
+            "modified": "2023-03-29T14:44:54.021Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d2f4c8ec-8a0b-4e42-bfca-6eae5b876b0a",
+            "colId": "2d91c85b-f91a-4250-8bbc-eb6f69e43093",
+            "containerId": "",
+            "name": "Get cliente id 1",
+            "url": "localhost:8080/api/cuentas/cliente?id=1",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-03-29T14:43:10.732Z",
+            "modified": "2023-03-29T14:44:18.222Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "1",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "e05e0a57-1be1-433a-87cf-3f3411d4778d",
+            "colId": "2d91c85b-f91a-4250-8bbc-eb6f69e43093",
+            "containerId": "",
+            "name": "Get proveedor id 1",
+            "url": "localhost:8080/api/cuentas/proveedor?id=1",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-03-29T14:45:03.474Z",
+            "modified": "2023-03-29T14:45:59.648Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "id",
+                    "value": "1",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        }
+    ]
+}
