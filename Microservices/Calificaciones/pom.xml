@@ -22,7 +22,7 @@
 		<ssdj-version>3.0.0</ssdj-version>
 		<sst-version>3.0.0</sst-version>
 		<sdt-version>3.0.0</sdt-version>
-		<h2-version>2.1.214</h2-version>
+		<h2-version>2.2.220</h2-version>
 	</properties>
 	<dependencies>
 
